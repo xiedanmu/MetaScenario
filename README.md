@@ -47,7 +47,7 @@ Store the road environment data into database.
 `python Interaction_MergingZS_InsertMap.py --DB Interaction_MergingZS_Scenario_DB --File ../DataSet/INTERACTION-Dataset-DR-v1_1/maps/DR_CHN_Merging_ZS.osm`
 
 Store the traffic participant data into database.
-`python Interaction_MergingZS_InsertTrafficParticipant.py --DB Interaction_MergingZS_Scenario_DB --Table 0 --File ../DataSet/INTERACTION-Dataset-DR-v1_1/recorded_trackfiles/DR_CHN_Merging_ZS/vehicle_tracks_000.csv
+`python Interaction_MergingZS_InsertTrafficParticipant.py --DB Interaction_MergingZS_Scenario_DB --Table 0 --File ../DataSet/INTERACTION-Dataset/vehicle_tracks_000.csv
 `
 
 Add the foreign key in the database.
