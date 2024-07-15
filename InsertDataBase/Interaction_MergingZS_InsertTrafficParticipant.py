@@ -12,7 +12,7 @@ import argparse
 def InsertTable(cursor, table, file):
     VehicleInfo = pd.read_csv(file, decimal=",", low_memory=False)
     VehicleInfo = np.array(VehicleInfo)
-    VehicleInfo = np.hstack((VehicleInfo[:, 0:4], VehicleInfo[:, 4:].astype(np.float)))
+    VehicleInfo = np.hstack((VehicleInfo[:, 0:4], VehicleInfo[:, 4:].astype(np.float64)))
     insertTimingSql = "insert into Traffic_timing_state" + table + "(time_stamp,vehicle_id,local_x,local_y,velocity_x,velocity_y,orientation,lane_id) " \
                       "values(%s,%s,%s,%s,%s,%s,%s,%s)"
     for i in range(len(VehicleInfo)):
